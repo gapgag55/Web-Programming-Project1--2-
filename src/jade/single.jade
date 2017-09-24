@@ -1,0 +1,75 @@
+include header 
+section#content 
+  .covered-slides 
+    ul 
+      -for(var i = 0; i < 5; i++) { 
+        li(style="background-image: url(images/cover-1.png)")
+      -}
+    .pagination 
+      ul 
+        li.is-active 
+        li 
+        li
+  .container 
+    section.row.information 
+      .col-lg-3.left(style="background-image: url(images/4.png)")
+      .col-lg-9.right 
+        h1 Spider-Man: Homecoming
+          span 2017
+        p "Thrilled by his experience with the Avengers, Peter returns home, where he lives with his Aunt May, under the watchful eye of his new mentor Tony Stark, Peter tries to fall back into his normal daily routine - distracted by thoughts of proving himself to be more than just your friendly neighborhood Spider-Man - but when the Vulture emerges as a new villain, everything that Peter holds most important will be threatened. Written by Benett Sullivan."
+        .row 
+          .col-lg-1.rate 
+            span 13
+          .col-lg-2.time 144 mins
+          .col-lg-4.category 
+            a(href="#") Adventure
+            a(href="#") Comedy
+            a(href="#") Travel
+          .col-lg-5.released Released  24 jan 2017 in Thailand
+        .row 
+          .col-lg-6.score.row 
+            .col-lg-3 7.4
+            .col-lg-9 / 
+              span 10 
+              br 
+              | From 1,252 users
+          .col-lg-6.voted Vote: 
+    section.group-people.row 
+      .col-lg-3 
+        b Director
+        hr 
+        .row 
+          ul
+            li(style="flex-basis: auto;")
+              a(href="#")
+                .left(style="background-image: url(images/director-1.png)")
+                .right Jon Watts
+      .col-lg-9(style="padding-left: 30px;")
+        b Writers
+        hr
+        .row 
+          ul
+            -for(var i = 0; i < 5; i++) {
+            li
+              a(href="#")
+                .left(style="background-image: url(images/writer-1.png)")
+                .right Jon Watts
+            -}
+        b Stars
+        hr
+        .row 
+          ul
+            -for(var i = 0; i < 5; i++) {
+            li
+              a(href="#")
+                .left(style="background-image: url(images/writer-1.png)")
+                .right Jon Watts
+            -}
+
+    section.trailer 
+      b.yellow Trailer 2:08 mins
+      iframe(src="https://www.youtube.com/embed/xEvV3OsE2WM", frameborder="0", allowfullscreen)
+    hr
+    b.yellow ANOTHER MOVIES
+    include components/carousel
+include footer

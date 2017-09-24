@@ -9,7 +9,7 @@ var browserSync = require('browser-sync')
 
 var reload = browserSync.reload
 
-gulp.task('default', ['jade', 'sass', 'js'], function() {
+gulp.task('default', ['jade', 'scss', 'js'], function() {
   browserSync.init({
     server: {
       baseDir: './public'
@@ -17,8 +17,8 @@ gulp.task('default', ['jade', 'sass', 'js'], function() {
   })
 
   gulp.watch("./public/**/*").on('change', reload)
-  gulp.watch("./src/jade/*.jade", ['jade'])
-  gulp.watch("./src/sass/*.sass", ['sass'])
+  gulp.watch("./src/jade/**/*.jade", ['jade'])
+  gulp.watch("./src/scss/**/*.scss", ['scss'])
   gulp.watch("./src/js/*.js", ['js'])
 })
 
@@ -34,17 +34,17 @@ gulp.task('js', function(cb) {
 })
 
 gulp.task('jade', function() {
-    gulp.src('./src/jade/*.jade')
-    .pipe(jade({
-      pretty: true
-    }))
-    .pipe(gulp.dest('./public/'))
+  gulp.src('./src/jade/**/*.jade')
+  .pipe(jade({
+    pretty: true
+  }))
+  .pipe(gulp.dest('./public/'))
 })
 
-gulp.task('sass', function () {
-    gulp.src('./src/sass/*.sass')
+gulp.task('scss', function () {
+    gulp.src('./src/scss/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(concat('style.css'))
+    .pipe(concat('styles.css'))
     .pipe(autoprefixer())
     .pipe(gulp.dest('./public/css'));
 });

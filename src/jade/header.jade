@@ -1,0 +1,33 @@
+doctype html
+html(lang='en')
+  head
+    title IMDb Redesign
+    // Required meta tags
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    // Bootstrap CSS
+    link(href="https://fonts.googleapis.com/css?family=Roboto:400,700", rel="stylesheet")
+    link(rel='stylesheet', href='css/font-awesome.min.css')
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    link(rel='stylesheet', href='css/styles.css')
+  body
+    header.container
+      nav.navbar.navbar-expand-lg.navbar-light.bg-light
+        a.navbar-brand(href='index.html') IMDb
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarText', aria-controls='navbarText', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarText.collapse.navbar-collapse
+          ul.navbar-nav.mr-auto
+            li.nav-item.active
+              a.nav-link(href='#')
+                | MOVIE 
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='tv-show.html') TV SHOWS
+            li.nav-item
+              a.nav-link(href='celebs.html') CELEBS
+            li.nav-item
+              a.nav-link(href='news.html') NEWS
+          span.navbar-text
+            i(class="fa fa-search")
+            input(type="text", placeholder="LOOKING FOR...")

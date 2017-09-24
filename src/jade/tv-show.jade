@@ -1,0 +1,36 @@
+include header 
+section#content
+  .container 
+    b.head Top Rated TV Shows
+    .row.filter
+      .left
+        select
+          option Rating
+          option 10 to 8 Stars 
+          option 7 to 5  Stars 
+          option 4 to 2  Stars 
+          option 1 to 0  Stars
+          op
+      .right
+        input(type="text", placeholder="Search by Name...")
+    .row.row-lines 
+      ul 
+        li.row.head
+          .col-lg-2
+          .col-lg-6
+            strong Rank & Title  
+          .col-lg-2.center
+            strong IMDb Rating 
+          .col-lg-2
+        -for(var i = 0; i < 7; i++) {
+        li.row 
+          .col-lg-2
+            .bg(style="background-image: url(images/tv/1.png)")
+          .col-lg-6
+            strong 1. Planet Earth II (2016)
+          .col-lg-2.center
+            strong.score 9.5
+          .col-lg-2.right
+            img(src="images/tv/bookmark.svg")
+        -}
+include footer

@@ -1,0 +1,17 @@
+section
+  ul.news 
+    - for(var i = 0; i < 3; i++) {
+      li
+        a(href="#").row 
+          .col-lg-2.left(style="background-image: url(images/celeb-#{i+1}.png)")
+          .col-lg-8.right 
+            .top 
+              span 11 hours ago
+              span The Hollywood Reporter - TV News
+            .middle 
+              h3 Emmys: 'Handmaid's Tale' Emerges as Big Winner in Night of New Faces
+            .bottom 
+              p Game of Thrones may now have a bigger Emmy obstacle than the exhaustive production schedule that kept it from being eligible for the 2017 show. The TV Academy is quite fond of a new drama…
+    - }
+  .read-more 
+    a(href="#") Read More...

@@ -1,0 +1,29 @@
+include header 
+section#content
+  .container 
+    b.head Adventure
+    .row.filter
+      .left
+        select
+          option Rating
+          option 10 to 8 Stars 
+          option 7 to 5  Stars 
+          option 4 to 2  Stars 
+          option 1 to 0  Stars
+          op
+      .right
+        input(type="text", placeholder="Search by Name...")
+    .row.boxes
+      -for(var i = 0; i < 25; i++) {
+      .col-lg-3(style="background-image: url(images/#{i%5+1}.png)")
+        span 7.6
+        span 536 VOTED
+        h3 Home Again
+      -}
+    .row
+      button.load-more LOAD MORE 
+        i(class="fa fa-chevron-down")
+    hr
+    b.yellow ANOTHER KINDS OF MOVIES
+    include components/carousel    
+include footer

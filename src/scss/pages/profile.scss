@@ -1,0 +1,91 @@
+@import '../partials/base';
+
+.profile {
+  margin: 60px auto;
+  text-align: center; 
+  color: $yellow;
+
+  .avatar {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, .5);
+  }
+
+  h3 {
+    display: block;
+    font-weight: bold;
+    font-size: 40px;
+    color: #ECD019;
+    letter-spacing: 0.3px;
+    margin-top: 20px;
+  }
+
+  span {
+    &:after {
+      content: ' | ';
+      color: #FFF;
+    }
+
+    &:last-child {
+      &:after {
+        content: '';
+      }
+    }
+  }
+
+  p {
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 17px;
+    color: #BBBBBB;
+    letter-spacing: 0.3px;
+    line-height: 25px;
+  }
+
+  .social {
+    text-align: center;
+    i {
+      color: #FFF;
+      padding: 0 5px;
+      font-size: 20px;
+    }
+  }
+}
+
+.gallery {
+  margin-bottom: 60px;
+  
+  .gallery-row {
+    height: 400px;
+    margin-bottom: 20px;
+
+    .two-in-column {
+      .row {
+        height: 192px;
+        margin-bottom: 15px;
+      }
+    }
+
+    .row {
+
+      &.two-in-row {
+        padding-top: 15px;
+        justify-content: space-between;
+        .bg {
+          width: 100%;
+          max-width: 222px;
+        }
+      }
+    }
+
+  }
+  .bg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+}
