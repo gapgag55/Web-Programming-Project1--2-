@@ -5,7 +5,7 @@ a:hover {
   font-weight: 200; }
 
 hr {
-  background: #333; }
+  background: rgba(255, 255, 255, 0.2); }
 
 body {
   overflow-x: hidden; }
@@ -48,12 +48,23 @@ h4, h5, h6 {
   .navbar-light .navbar-collapse .nav-item.active a {
     color: #EFD319 !important; }
   .navbar-light .navbar-collapse .navbar-text {
-    position: relative; }
-    .navbar-light .navbar-collapse .navbar-text i {
-      position: absolute;
-      top: 15px;
-      right: 10px;
-      color: #FFF; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .navbar-light .navbar-collapse .navbar-text .search {
+      position: relative; }
+      .navbar-light .navbar-collapse .navbar-text .search i {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        color: #FFF; }
+    .navbar-light .navbar-collapse .navbar-text .avatar {
+      margin-left: 10px;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-position: center;
+      background-size: cover; }
 
 a:hover {
   color: #FFF; }
@@ -62,7 +73,7 @@ a:hover {
   font-weight: 200; }
 
 hr {
-  background: #333; }
+  background: rgba(255, 255, 255, 0.2); }
 
 .carousel {
   padding-bottom: 40px; }
@@ -162,19 +173,19 @@ hr {
         content: ''; }
     .news li .right .middle {
       font-size: 20px;
-      color: #AAAAAA;
+      color: #bcbcbc;
       letter-spacing: 0.42px;
       line-height: 30px;
       font-weight: bold;
       margin-bottom: 10px; }
     .news li .right .bottom {
       font-size: 17px;
-      color: #AAAAAA;
+      color: #bcbcbc;
       letter-spacing: 0.35px;
       line-height: 1.4; }
 
 body {
-  background: linear-gradient(#3B3B3B, #000);
+  background: linear-gradient(#304E67, #223F57);
   min-height: 100vh;
   font-family: sans-serif; }
 
@@ -227,7 +238,7 @@ section .read-more {
     font-weight: bold; }
 
 .list-movie li {
-  background-color: #212020;
+  background-color: #16293a;
   margin: 0;
   margin-bottom: 20px;
   cursor: pointer;
@@ -236,7 +247,6 @@ section .read-more {
   .list-movie li > div {
     padding: 10px; }
   .list-movie li > .left {
-    background-color: #000000;
     color: #F0D737; }
     .list-movie li > .left span {
       display: block;
@@ -263,11 +273,11 @@ section .read-more {
             justify-content: center; }
     .list-movie li > .right h4 {
       font-size: 18px;
-      color: #7B7B7B;
+      color: #bcbcbc;
       letter-spacing: 0.29px; }
     .list-movie li > .right a {
       font-size: 12px;
-      color: #7B7B7B;
+      color: #bcbcbc;
       letter-spacing: 0.39px; }
       .list-movie li > .right a:after {
         content: '| '; }
@@ -283,7 +293,7 @@ a:hover {
   font-weight: 200; }
 
 hr {
-  background: #333; }
+  background: rgba(255, 255, 255, 0.2); }
 
 .covered-slides {
   position: relative;
@@ -448,7 +458,7 @@ a:hover {
   font-weight: 200; }
 
 hr {
-  background: #333; }
+  background: rgba(255, 255, 255, 0.2); }
 
 .filter {
   margin: 0; }
@@ -588,7 +598,7 @@ a:hover {
   font-weight: 200; }
 
 hr {
-  background: #333; }
+  background: rgba(255, 255, 255, 0.2); }
 
 .profile {
   margin: 60px auto;
@@ -656,7 +666,7 @@ a:hover {
   font-weight: 200; }
 
 hr {
-  background: #333; }
+  background: rgba(255, 255, 255, 0.2); }
 
 .row-lines {
   margin: 30px 0; }
@@ -706,6 +716,45 @@ hr {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; }
+
+a:hover {
+  color: #FFF; }
+
+* {
+  font-weight: 200; }
+
+hr {
+  background: rgba(255, 255, 255, 0.2); }
+
+.group-form {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 400px; }
+  .group-form b {
+    font-weight: bold;
+    font-size: 40px;
+    color: #FFF;
+    letter-spacing: 0.69px;
+    margin-bottom: 20px; }
+  .group-form form > * {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px; }
+  .group-form form input,
+  .group-form form textarea {
+    outline: 0;
+    border: 0;
+    background: #1b1b1b;
+    border-radius: 5px;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 15px 20px; }
+  .group-form form input[type="submit"] {
+    background-color: #F0D737;
+    font-weight: bold;
+    color: #000;
+    border-radius: 5px;
+    margin-top: 20px; }
 
 footer {
   background: #000;

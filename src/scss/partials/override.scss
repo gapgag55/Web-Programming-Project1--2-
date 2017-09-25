@@ -38,12 +38,25 @@
     }
 
     .navbar-text {
-      position: relative;
-      i {
-        position: absolute;
-        top: 15px;
-        right: 10px;
-        color: #FFF;
+      display: flex;
+
+      .search {
+        position: relative;
+        i {
+          position: absolute;
+          top: 8px;
+          right: 10px;
+          color: #FFF;
+        }
+      }
+
+      .avatar {
+        margin-left: 10px;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
       }
     }
   }

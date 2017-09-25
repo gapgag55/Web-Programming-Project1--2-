@@ -1,0 +1,42 @@
+@import '../partials/base';
+
+.group-form {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 400px;
+
+  b {
+    font-weight: bold;
+    font-size: 40px;
+    color: #FFF;
+    letter-spacing: 0.69px;
+    margin-bottom: 20px;
+  }
+
+  form {
+    & > * {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    input,
+    textarea {
+      outline: 0;
+      border: 0;
+      background: #1b1b1b;
+      border-radius: 5px;
+      color: #FFF;
+      border-radius: 5px;
+      padding: 15px 20px;
+    }
+
+    input[type="submit"] {
+      background-color: $yellow;
+      font-weight: bold;
+      color: #000;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+  }
+}

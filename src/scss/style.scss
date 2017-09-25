@@ -79,7 +79,7 @@ section {
 // Component List of Movies
 .list-movie {
   li  {
-    background-color: $grey;
+    background-color: #16293a;
     margin: 0;
     margin-bottom: 20px;
     cursor: pointer;
@@ -91,7 +91,6 @@ section {
     }
 
     & > .left {
-      background-color: $black;
       color: $yellow;
 
       span {
@@ -120,13 +119,13 @@ section {
 
       h4 {
         font-size: 18px;
-        color: #7B7B7B;
+        color: #bcbcbc;
         letter-spacing: 0.29px;
       }
 
       a {
         font-size: 12px;
-        color: #7B7B7B;
+        color: #bcbcbc;
         letter-spacing: 0.39px;
         
         &:after {
@@ -153,6 +152,7 @@ section {
 @import 'pages/category';
 @import 'pages/profile';
 @import 'pages/tv-show';
+@import 'pages/login';
 
 //Footer 
 footer {
