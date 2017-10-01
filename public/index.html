@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+    <div id="load" class="is-active">
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>..Loading..
+    </div>
     <header class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light"><a href="index.html" class="navbar-brand">IMDb</a>
         <button type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
@@ -22,184 +29,296 @@
             <li class="nav-item"><a href="celebs.html" class="nav-link">CELEBS</a></li>
             <li class="nav-item"><a href="news.html" class="nav-link">NEWS</a></li>
           </ul><span class="navbar-text">
-            <div class="search"> <i class="fa fa-search"></i>
-              <input type="text" placeholder="LOOKING FOR...">
+            <div class="search"> 
+              <form action="category.html"><i class="fa fa-search"></i>
+                <input type="text" placeholder="LOOKING FOR...">
+              </form>
             </div><a href="login.html" style="background-image: url(images/avatar.jpg);" class="avatar"></a></span>
         </div>
       </nav>
     </header>
+    <section id="content">
+      <div class="container"> 
+        <b class="yellow">IN THEATER</b>
+        <div class="carousel"> 
+          <ul> 
+              <li style="background-image: url(images/movies/home-again/1.png)">
+                <a href="movies/home-again.html">   
+                  <span>5.7</span>
+                  <span>2,061 VOTED</span>
+                  <h3>Home Again</h3>
+                </a>
+              </li>
+              <li style="background-image: url(images/movies/american-made/1.jpg)">
+                <a href="single.html">   
+                  <span>7.3</span>
+                  <span>17,132 VOTED</span>
+                  <h3>American Made (2017)</h3>
+                </a>
+              </li>
+              <li style="background-image: url(images/movies/flatliners/1.jpg)">
+                <a href="single.html">   
+                  <span>5.2</span>
+                  <span>1,087 VOTED</span>
+                  <h3>Flatliner (2017)</h3>
+                </a>
+              </li>
+              <li style="background-image: url(images/movies/judwaa/1.jpg)">
+                <a href="single.html">   
+                  <span>4.0</span>
+                  <span>1,011 VOTED</span>
+                  <h3>Judwaa 2 (2017)</h3>
+                </a>
+              </li>
+              <li style="background-image: url(images/movies/question/1.jpg)">
+                <a href="single.html">   
+                  <span>5.7</span>
+                  <span>63 VOTED</span>
+                  <h3>A Question of Faith (2017)</h3>
+                </a>
+              </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container"> 
+        <hr>
+        <div class="section row">
+          <div class="col-lg-6"><b>Opening This Week</b>
+            <ul class="list-movie">
+              <li class="row"> 
+                <div class="col-lg-2 left">
+                  <span>7.3</span>
+                  <span>17,321 voted</span>
+                </div>
+                <div class="col-lg-10 right">
+                  <h4>American Made (2017)</h4>
+                  <div class="category"> 
+                    <a href="#">Action</a>
+                    <a href="#">Biography</a>
+                    <a href="#">Comedy</a>
+                    <a href="#">Crime</a>
+                    <a href="#">Drama</a>
+                    <a href="#">History</a>
+                    <a href="#">Thriller</a>
+                  </div>
+                </div>
+              </li>
+              <li class="row"> 
+                <div class="col-lg-2 left">
+                  <span>5.2</span>
+                  <span>1,087 voted</span>
+                </div>
+                <div class="col-lg-10 right">
+                  <h4>Flatliners (2017)</h4>
+                  <div class="category"> 
+                    <a href="#">Drama</a>
+                    <a href="#">Horror</a>
+                    <a href="#">Sci-Fi</a>
+                    <a href="#">Thriller</a>
+                  </div>
+                </div>
+               </li>
+
+              <li class="row"> 
+                <div class="col-lg-2 left">
+                  <span>5.7</span>
+                  <span>63 voted</span>
+                </div>
+                <div class="col-lg-10 right">
+                  <h4>A Question of Faith (2017)</h4>
+                  <div class="category"> 
+                    <a href="#">Drama</a>
+                  </div>
+                </div>
+               </li>
+              <li class="row"> 
+                <div class="col-lg-2 left">
+                  <span>6.5</span>
+                  <span>1,411 voted</span>
+                </div>
+                <div class="col-lg-10 right">
+                  <h4>Battle of the Sexes (2017)</h4>
+                  <div class="category"> 
+                    <a href="#">Biography</a>
+                    <a href="#">Comed</a>
+                    <a href="#">Sport</a>
+                  </div>
+                </div>
+               </li>
+              <li class="row"> 
+                <div class="col-lg-2 left">
+                  <span>6.1</span>
+                  <span>161 voted</span>
+                </div>
+                <div class="col-lg-10 right">
+                  <h4>Mark Felt (2017)</h4>
+                  <div class="category"> 
+                    <a href="#">Biography</a>
+                    <a href="#">Drama</a>
+                    <a href="#">History</a>
+                    <a href="#">Thriller</a>
+                  </div>
+                </div>
+               </li>
+            </ul>
+          </div>
+          <div class="col-lg-6"><b>Most Popular Movies</b>
+            <ul class="list-movie">
+              <li class="row"> 
+                <div class="col-lg-2 left">
+                  <span>7.9</span>
+                  <span>122,490 voted</span>
+                </div>
+                <div class="col-lg-10 right">
+                  <h4>It (2017)</h4>
+                  <div class="category"> 
+                    <a href="#">Drama</a>
+                    <a href="#">Horror</a>
+                    <a href="#">Thriller</a>
+                  </div>
+                </div>
+              </li>
+              <li class="row"> 
+                <div class="col-lg-2 left">
+                  <span>7.0</span>
+                  <span>26,364 voted</span>
+                </div>
+                <div class="col-lg-10 right">
+                  <h4>Mother (2017)</h4>
+                  <div class="category"> 
+                    <a href="#">Drama</a>
+                    <a href="#">Horror</a>
+                    <a href="#">Mystery</a>
+                  </div>
+                </div>
+              </li>
+              <li class="row"> 
+                <div class="col-lg-2 left">
+                  <span>7.3</span>
+                  <span>36,985 voted</span>
+                </div>
+                <div class="col-lg-10 right">
+                  <h4>Kingsman: The Golden Circle (2017)</h4>
+                  <div class="category"> 
+                    <a href="#">Action</a>
+                    <a href="#">Adventure</a>
+                    <a href="#">Comedy</a>
+                  </div>
+                </div>
+              </li>
+              <li class="row"> 
+                <div class="col-lg-2 left">
+                  <span>6.6</span>
+                  <span>8,519 voted</span>
+                </div>
+                <div class="col-lg-10 right">
+                  <h4>American Assassin (2017)</h4>
+                  <div class="category"> 
+                    <a href="#">Action</a>
+                    <a href="#">Thriller</a>
+                  </div>
+                </div>
+              </li>
+              <li class="row"> 
+                <div class="col-lg-2 left">
+                  <span>7.9</span>
+                  <span>154,053 voted</span>
+                </div>
+                <div class="col-lg-10 right">
+                  <h4>Baby Driver (2017)</h4>
+                  <div class="category"> 
+                    <a href="#">Action</a>
+                    <a href="#">Crime</a>
+                    <a href="#">Music</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <b class="yellow">COMING SOON</b>
+        <div class="carousel"> 
+          <ul> 
+            <li style="background-image: url(images/movies/blade-runner/1.jpg)">
+              <a href="single.html">   
+                <span>1</span>
+                <h3>Blade Runner 2049 (2017)</h3>
+              </a>
+            </li>
+            <li style="background-image: url(images/movies/pony/1.jpg)">
+              <a href="single.html">   
+                <span>2</span>
+                <h3>My Little Pony: The Movie (2017)</h3>
+              </a>
+            </li>
+            <li style="background-image: url(images/movies/mountain/1.jpg)">
+              <a href="single.html">   
+                <span>3</span>
+                <h3>The Mountain Between Us (2017)</h3>
+              </a>
+            </li>
+            <li style="background-image: url(images/movies/florida/1.jpg)">
+              <a href="single.html">   
+                <span>4</span>
+                <h3>The Florida Project (2017)</h3>
+              </a>
+            </li>
+            <li style="background-image: url(images/movies/una/1.jpg)">
+              <a href="single.html">   
+                <span>5</span>
+                <h3>Una (2016)</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <hr>
+        <b class="yellow">NEWS</b>
+        <section>
+          <ul class="news"> 
+            <li><a href="http://www.thewrap.com/monty-hall-lets-make-deal-host-dies-96/" class="row"> 
+                <div style="background-image: url(images/news/1.jpg)" class="col-lg-2 left"></div>
+                <div class="col-lg-8 right"> 
+                  <div class="top"> <span>15 hours ago</span><span>The Hollywood Reporter - TV News</span></div>
+                  <div class="middle"> 
+                    <h3>Emmys: 'Handmaid's Tale' Emerges as Big Winner in Night of New Faces</h3>
+                  </div>
+                  <div class="bottom"> </div>
+                  <p>Monty Hall, the emcee, producer, singer and sportscaster best known as the host and co-creator of the influential game show “Let’s Make a Deal,” has died at age 96. Born Monte Halparin in Winnipeg, Manitoba, Canada to an Orthodox Jewish family in 1921, Hall began his career in broadcasting on the radio in 1946. He would go on to host several pivotal game shows and even served as a sports analyst for the NHL’s New York Rangers in 1959 and 1960. He’s survived by his daughter, Tony Award-winning actress Gleason, her husband Chris Sarandon, his daughter Sharon Hall, current president of...</p>
+                </div></a></li>
+            <li><a href="http://variety.com/2017/film/news/box-office-tom-cruise-kingsman-it-flatliners-1202576981/" class="row"> 
+                <div style="background-image: url(images/news/2.jpg)" class="col-lg-2 left"></div>
+                <div class="col-lg-8 right"> 
+                  <div class="top"> <span>22 hours ago</span><span>Variety - Film News - See recent Variety - Film News news</span></div>
+                  <div class="middle"> 
+                    <h3>Box Office: Tom Cruise, ‘Kingsman’ Sequel, ‘It’ Battle for Top Spot, ‘Flatliners’ Flatlines</h3>
+                  </div>
+                  <div class="bottom"> </div>
+                  <p>Universal’s Tom Cruise actioner “American Made,” Fox’s “Kingsman: the Golden Circle” and New Line’s “It” are all battling for the top spot at this weekend’s North American box office. Estimates showed Saturday that all three movies were heading for around $16.5 million for the Friday-Sunday period amid moderate overall business. Sony’s reboot of “Flatliners” showed little life in its launch with $6 million at 2,552 locations, coming in below what were already modest expectations.</p>
+                </div></a></li>
+            <li><a href="http://variety.com/2017/film/news/san-sebastian-james-franco-the-disaster-artist-golden-shell-1202577123/" class="row"> 
+                <div style="background-image: url(images/news/3.png)" class="col-lg-2 left"></div>
+                <div class="col-lg-8 right"> 
+                  <div class="top"> <span>17 hours ago</span><span>Variety - Film News - See recent Variety - Film News news</span></div>
+                  <div class="middle"> 
+                    <h3>James Franco’s ‘The Disaster Artist’ Wins San Sebastian</h3>
+                  </div>
+                  <div class="bottom"> </div>
+                  <p>San Sebastian — Having placed second in Toronto’s People’s Choice Awards, James Franco scored his first big outright win as a director, his “The Disaster Artist” scooping Saturday night the 65th San Sebastián Festival’s Golden Shell, the top plaudit at the highest-profile film event in the Spanish-speaking world. "This was a family affair, my brother, my sister, my old friend Seth Rogen," Franco said, accepting the award on stage at San Sebastián.</p>
+                </div></a></li>
+          </ul>
+          <div class="read-more"> <a href="news.html">Read More...</a></div>
+        </section>
+      </div>
+    </section>
+    <footer>
+      <div class="container"> 
+        <h1>IMDb </h1>
+        <p>Find showtimes, watch tailers, browse photos<br>your watchlist and rate your favorite movies <br>and TV shows on your phone or tablet!<br><br>Download <a href="#">Play Store </a>or <a href="#">Apple Store</a></p>
+      </div>
+    </footer>
+    <script src="js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
-<section id="content">
-  <div class="container"> <b class="yellow">IN THEATER</b>
-    <div class="carousel"> 
-      <ul> 
-        <li style="background-image: url(images/1.png)"><span>7.6</span><span>536 VOTED</span>
-          <h3>Home Again</h3>
-        </li>
-        <li style="background-image: url(images/2.png)"><span>7.6</span><span>536 VOTED</span>
-          <h3>Home Again</h3>
-        </li>
-        <li style="background-image: url(images/3.png)"><span>7.6</span><span>536 VOTED</span>
-          <h3>Home Again</h3>
-        </li>
-        <li style="background-image: url(images/4.png)"><span>7.6</span><span>536 VOTED</span>
-          <h3>Home Again</h3>
-        </li>
-        <li style="background-image: url(images/5.png)"><span>7.6</span><span>536 VOTED</span>
-          <h3>Home Again</h3>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="container"> 
-    <hr>
-    <div class="section row">
-      <div class="col-lg-6"><b>Opening this week</b>
-        <ul class="list-movie">
-          <li class="row"> 
-            <div class="col-lg-2 left"><span>8.2 </span><span>232 voted</span></div>
-            <div class="col-lg-10 right">
-              <h4>Kingsman: The Golden Circle (2017)</h4>
-              <div class="category"> <a href="#">Action </a><a href="#">Adventure </a><a href="#">Comedy</a></div>
-            </div>
-          </li>
-          <li class="row"> 
-            <div class="col-lg-2 left"><span>8.2 </span><span>232 voted</span></div>
-            <div class="col-lg-10 right">
-              <h4>Kingsman: The Golden Circle (2017)</h4>
-              <div class="category"> <a href="#">Action </a><a href="#">Adventure </a><a href="#">Comedy</a></div>
-            </div>
-          </li>
-          <li class="row"> 
-            <div class="col-lg-2 left"><span>8.2 </span><span>232 voted</span></div>
-            <div class="col-lg-10 right">
-              <h4>Kingsman: The Golden Circle (2017)</h4>
-              <div class="category"> <a href="#">Action </a><a href="#">Adventure </a><a href="#">Comedy</a></div>
-            </div>
-          </li>
-          <li class="row"> 
-            <div class="col-lg-2 left"><span>8.2 </span><span>232 voted</span></div>
-            <div class="col-lg-10 right">
-              <h4>Kingsman: The Golden Circle (2017)</h4>
-              <div class="category"> <a href="#">Action </a><a href="#">Adventure </a><a href="#">Comedy</a></div>
-            </div>
-          </li>
-          <li class="row"> 
-            <div class="col-lg-2 left"><span>8.2 </span><span>232 voted</span></div>
-            <div class="col-lg-10 right">
-              <h4>Kingsman: The Golden Circle (2017)</h4>
-              <div class="category"> <a href="#">Action </a><a href="#">Adventure </a><a href="#">Comedy</a></div>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="col-lg-6"><b>Now Playing</b>
-        <ul class="list-movie">
-          <li class="row"> 
-            <div class="col-lg-2 left"><span>8.2 </span><span>232 voted</span></div>
-            <div class="col-lg-10 right">
-              <h4>Kingsman: The Golden Circle (2017)</h4>
-              <div class="category"> <a href="#">Action </a><a href="#">Adventure </a><a href="#">Comedy</a></div>
-            </div>
-          </li>
-          <li class="row"> 
-            <div class="col-lg-2 left"><span>8.2 </span><span>232 voted</span></div>
-            <div class="col-lg-10 right">
-              <h4>Kingsman: The Golden Circle (2017)</h4>
-              <div class="category"> <a href="#">Action </a><a href="#">Adventure </a><a href="#">Comedy</a></div>
-            </div>
-          </li>
-          <li class="row"> 
-            <div class="col-lg-2 left"><span>8.2 </span><span>232 voted</span></div>
-            <div class="col-lg-10 right">
-              <h4>Kingsman: The Golden Circle (2017)</h4>
-              <div class="category"> <a href="#">Action </a><a href="#">Adventure </a><a href="#">Comedy</a></div>
-            </div>
-          </li>
-          <li class="row"> 
-            <div class="col-lg-2 left"><span>8.2 </span><span>232 voted</span></div>
-            <div class="col-lg-10 right">
-              <h4>Kingsman: The Golden Circle (2017)</h4>
-              <div class="category"> <a href="#">Action </a><a href="#">Adventure </a><a href="#">Comedy</a></div>
-            </div>
-          </li>
-          <li class="row"> 
-            <div class="col-lg-2 left"><span>8.2 </span><span>232 voted</span></div>
-            <div class="col-lg-10 right">
-              <h4>Kingsman: The Golden Circle (2017)</h4>
-              <div class="category"> <a href="#">Action </a><a href="#">Adventure </a><a href="#">Comedy</a></div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <hr><b class="yellow">COMING SOON</b>
-    <div class="carousel"> 
-      <ul> 
-        <li style="background-image: url(images/1.png)"><span>7.6</span><span>536 VOTED</span>
-          <h3>Home Again</h3>
-        </li>
-        <li style="background-image: url(images/2.png)"><span>7.6</span><span>536 VOTED</span>
-          <h3>Home Again</h3>
-        </li>
-        <li style="background-image: url(images/3.png)"><span>7.6</span><span>536 VOTED</span>
-          <h3>Home Again</h3>
-        </li>
-        <li style="background-image: url(images/4.png)"><span>7.6</span><span>536 VOTED</span>
-          <h3>Home Again</h3>
-        </li>
-        <li style="background-image: url(images/5.png)"><span>7.6</span><span>536 VOTED</span>
-          <h3>Home Again</h3>
-        </li>
-      </ul>
-    </div>
-    <hr><b class="yellow">NEWS</b>
-    <section>
-      <ul class="news"> 
-        <li><a href="#" class="row"> 
-            <div style="background-image: url(images/celeb-1.png)" class="col-lg-2 left"></div>
-            <div class="col-lg-8 right"> 
-              <div class="top"> <span>11 hours ago</span><span>The Hollywood Reporter - TV News</span></div>
-              <div class="middle"> 
-                <h3>Emmys: 'Handmaid's Tale' Emerges as Big Winner in Night of New Faces</h3>
-              </div>
-              <div class="bottom"> 
-                <p>Game of Thrones may now have a bigger Emmy obstacle than the exhaustive production schedule that kept it from being eligible for the 2017 show. The TV Academy is quite fond of a new drama…</p>
-              </div>
-            </div></a></li>
-        <li><a href="#" class="row"> 
-            <div style="background-image: url(images/celeb-2.png)" class="col-lg-2 left"></div>
-            <div class="col-lg-8 right"> 
-              <div class="top"> <span>11 hours ago</span><span>The Hollywood Reporter - TV News</span></div>
-              <div class="middle"> 
-                <h3>Emmys: 'Handmaid's Tale' Emerges as Big Winner in Night of New Faces</h3>
-              </div>
-              <div class="bottom"> 
-                <p>Game of Thrones may now have a bigger Emmy obstacle than the exhaustive production schedule that kept it from being eligible for the 2017 show. The TV Academy is quite fond of a new drama…</p>
-              </div>
-            </div></a></li>
-        <li><a href="#" class="row"> 
-            <div style="background-image: url(images/celeb-3.png)" class="col-lg-2 left"></div>
-            <div class="col-lg-8 right"> 
-              <div class="top"> <span>11 hours ago</span><span>The Hollywood Reporter - TV News</span></div>
-              <div class="middle"> 
-                <h3>Emmys: 'Handmaid's Tale' Emerges as Big Winner in Night of New Faces</h3>
-              </div>
-              <div class="bottom"> 
-                <p>Game of Thrones may now have a bigger Emmy obstacle than the exhaustive production schedule that kept it from being eligible for the 2017 show. The TV Academy is quite fond of a new drama…</p>
-              </div>
-            </div></a></li>
-      </ul>
-      <div class="read-more"> <a href="#">Read More...</a></div>
-    </section>
-  </div>
-</section>
-<footer>
-  <div class="container"> 
-    <h1>IMDb </h1>
-    <p>Find showtimes, watch tailers, browse photos<br>your watchlist and rate your favorite movies <br>and TV shows on your phone or tablet!<br><br>Download <a href="#">Play Store </a>or <a href="#">Apple Store</a></p>
-  </div>
-</footer>
-<script src="js/vendor/jquery-3.2.1.min.js"></script>
-<script src="js/app.js"></script>

@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+    <div id="load" class="is-active">
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>..Loading..
+    </div>
     <header class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light"><a href="index.html" class="navbar-brand">IMDb</a>
         <button type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
@@ -22,8 +29,10 @@
             <li class="nav-item"><a href="celebs.html" class="nav-link">CELEBS</a></li>
             <li class="nav-item"><a href="news.html" class="nav-link">NEWS</a></li>
           </ul><span class="navbar-text">
-            <div class="search"> <i class="fa fa-search"></i>
-              <input type="text" placeholder="LOOKING FOR...">
+            <div class="search"> 
+              <form action="category.html"><i class="fa fa-search"></i>
+                <input type="text" placeholder="LOOKING FOR...">
+              </form>
             </div><a href="login.html" style="background-image: url(images/avatar.jpg);" class="avatar"></a></span>
         </div>
       </nav>
@@ -65,50 +74,74 @@
         </li>
         <li class="row"> 
           <div class="col-lg-2">
-            <div style="background-image: url(images/tv/1.png)" class="bg"></div>
+            <div style="background-image: url(images/tv/2.jpg)" class="bg"></div>
           </div>
-          <div class="col-lg-6"><strong>1. Planet Earth II (2016)</strong></div>
+          <div class="col-lg-6"><strong>2. Band of Brothers (2001)</strong></div>
           <div class="col-lg-2 center"><strong class="score">9.5</strong></div>
           <div class="col-lg-2 right"><img src="images/tv/bookmark.svg"></div>
         </li>
         <li class="row"> 
           <div class="col-lg-2">
-            <div style="background-image: url(images/tv/1.png)" class="bg"></div>
+            <div style="background-image: url(images/tv/3.jpg)" class="bg"></div>
           </div>
-          <div class="col-lg-6"><strong>1. Planet Earth II (2016)</strong></div>
+          <div class="col-lg-6"><strong>3. Planet Earth (2006)</strong></div>
           <div class="col-lg-2 center"><strong class="score">9.5</strong></div>
           <div class="col-lg-2 right"><img src="images/tv/bookmark.svg"></div>
         </li>
         <li class="row"> 
           <div class="col-lg-2">
-            <div style="background-image: url(images/tv/1.png)" class="bg"></div>
+            <div style="background-image: url(images/tv/4.jpg)" class="bg"></div>
           </div>
-          <div class="col-lg-6"><strong>1. Planet Earth II (2016)</strong></div>
-          <div class="col-lg-2 center"><strong class="score">9.5</strong></div>
+          <div class="col-lg-6"><strong>4. Game of Thrones (2011)</strong></div>
+          <div class="col-lg-2 center"><strong class="score">9.4</strong></div>
           <div class="col-lg-2 right"><img src="images/tv/bookmark.svg"></div>
         </li>
         <li class="row"> 
           <div class="col-lg-2">
-            <div style="background-image: url(images/tv/1.png)" class="bg"></div>
+            <div style="background-image: url(images/tv/5.jpg)" class="bg"></div>
           </div>
-          <div class="col-lg-6"><strong>1. Planet Earth II (2016)</strong></div>
-          <div class="col-lg-2 center"><strong class="score">9.5</strong></div>
+          <div class="col-lg-6"><strong>5. Breaking Bad (2008)</strong></div>
+          <div class="col-lg-2 center"><strong class="score">9.4</strong></div>
           <div class="col-lg-2 right"><img src="images/tv/bookmark.svg"></div>
         </li>
         <li class="row"> 
           <div class="col-lg-2">
-            <div style="background-image: url(images/tv/1.png)" class="bg"></div>
+            <div style="background-image: url(images/tv/6.jpg)" class="bg"></div>
           </div>
-          <div class="col-lg-6"><strong>1. Planet Earth II (2016)</strong></div>
-          <div class="col-lg-2 center"><strong class="score">9.5</strong></div>
+          <div class="col-lg-6"><strong>6. The Wire (2002)</strong></div>
+          <div class="col-lg-2 center"><strong class="score">9.3</strong></div>
           <div class="col-lg-2 right"><img src="images/tv/bookmark.svg"></div>
         </li>
         <li class="row"> 
           <div class="col-lg-2">
-            <div style="background-image: url(images/tv/1.png)" class="bg"></div>
+            <div style="background-image: url(images/tv/7.jpg)" class="bg"></div>
           </div>
-          <div class="col-lg-6"><strong>1. Planet Earth II (2016)</strong></div>
-          <div class="col-lg-2 center"><strong class="score">9.5</strong></div>
+          <div class="col-lg-6"><strong>7. Rick and Morty (2013)</strong></div>
+          <div class="col-lg-2 center"><strong class="score">9.3</strong></div>
+          <div class="col-lg-2 right"><img src="images/tv/bookmark.svg"></div>
+        </li>
+        <li class="row"> 
+          <div class="col-lg-2">
+            <div style="background-image: url(images/tv/8.jpg)" class="bg"></div>
+          </div>
+          <div class="col-lg-6"><strong>8. Cosmos: A Spacetime Odyssey (2014)</strong></div>
+          <div class="col-lg-2 center"><strong class="score">9.3</strong></div>
+          <div class="col-lg-2 right"><img src="images/tv/bookmark.svg"></div>
+        </li>
+        <li class="row"> 
+          <div class="col-lg-2">
+            <div style="background-image: url(images/tv/9.jpg)" class="bg"></div>
+          </div>
+          <div class="col-lg-6"><strong>9. Cosmos (1980)</strong></div>
+          <div class="col-lg-2 center"><strong class="score">9.2</strong></div>
+          <div class="col-lg-2 right"><img src="images/tv/bookmark.svg"></div>
+        </li>
+        <li class="row"> 
+          <div class="col-lg-2">
+            <div style="background-image: url(images/tv/10.jpg)" class="bg"></div>
+          </div>
+          <div class="col-lg-6"><strong>10. The World at War (1973)</strong></div>
+          <div class="col-lg-2 center"><strong class="score">9.2</strong></div>
           <div class="col-lg-2 right"><img src="images/tv/bookmark.svg"></div>
         </li>
       </ul>
@@ -122,4 +155,5 @@
   </div>
 </footer>
 <script src="js/vendor/jquery-3.2.1.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/app.js"></script>

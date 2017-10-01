@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+    <div id="load" class="is-active">
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>..Loading..
+    </div>
     <header class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light"><a href="index.html" class="navbar-brand">IMDb</a>
         <button type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
@@ -22,8 +29,10 @@
             <li class="nav-item"><a href="celebs.html" class="nav-link">CELEBS</a></li>
             <li class="nav-item"><a href="news.html" class="nav-link">NEWS</a></li>
           </ul><span class="navbar-text">
-            <div class="search"> <i class="fa fa-search"></i>
-              <input type="text" placeholder="LOOKING FOR...">
+            <div class="search"> 
+              <form action="category.html"><i class="fa fa-search"></i>
+                <input type="text" placeholder="LOOKING FOR...">
+              </form>
             </div><a href="login.html" style="background-image: url(images/avatar.jpg);" class="avatar"></a></span>
         </div>
       </nav>
@@ -49,82 +58,105 @@
     </div>
     <div class="row row-lines"> 
       <ul class="news">
-        <li><a href="#" class="row"> 
-            <div style="background-image: url(images/celeb-1.png)" class="col-lg-2 left"></div>
+        <li><a href="http://www.thewrap.com/monty-hall-lets-make-deal-host-dies-96/" class="row"> 
+            <div style="background-image: url(images/news/1.jpg)" class="col-lg-2 left"></div>
             <div class="col-lg-8 right"> 
-              <div class="top"> <span>11 hours ago</span><span>The Hollywood Reporter - TV News</span></div>
+              <div class="top"> <span>15 hours ago</span><span>The Hollywood Reporter - TV News</span></div>
               <div class="middle"> 
                 <h3>Emmys: 'Handmaid's Tale' Emerges as Big Winner in Night of New Faces</h3>
               </div>
-              <div class="bottom"> 
-                <p>Game of Thrones may now have a bigger Emmy obstacle than the exhaustive production schedule that kept it from being eligible for the 2017 show. The TV Academy is quite fond of a new drama…</p>
-              </div>
+              <div class="bottom"> </div>
+              <p>Monty Hall, the emcee, producer, singer and sportscaster best known as the host and co-creator of the influential game show “Let’s Make a Deal,” has died at age 96. Born Monte Halparin in Winnipeg, Manitoba, Canada to an Orthodox Jewish family in 1921, Hall began his career in broadcasting on the radio in 1946. He would go on to host several pivotal game shows and even served as a sports analyst for the NHL’s New York Rangers in 1959 and 1960. He’s survived by his daughter, Tony Award-winning actress Gleason, her husband Chris Sarandon, his daughter Sharon Hall, current president of...</p>
             </div></a></li>
-        <li><a href="#" class="row"> 
-            <div style="background-image: url(images/celeb-2.png)" class="col-lg-2 left"></div>
+        <li><a href="http://variety.com/2017/film/news/box-office-tom-cruise-kingsman-it-flatliners-1202576981/" class="row"> 
+            <div style="background-image: url(images/news/2.jpg)" class="col-lg-2 left"></div>
             <div class="col-lg-8 right"> 
-              <div class="top"> <span>11 hours ago</span><span>The Hollywood Reporter - TV News</span></div>
+              <div class="top"> <span>22 hours ago</span><span>Variety - Film News - See recent Variety - Film News news</span></div>
               <div class="middle"> 
-                <h3>Emmys: 'Handmaid's Tale' Emerges as Big Winner in Night of New Faces</h3>
+                <h3>Box Office: Tom Cruise, ‘Kingsman’ Sequel, ‘It’ Battle for Top Spot, ‘Flatliners’ Flatlines</h3>
               </div>
-              <div class="bottom"> 
-                <p>Game of Thrones may now have a bigger Emmy obstacle than the exhaustive production schedule that kept it from being eligible for the 2017 show. The TV Academy is quite fond of a new drama…</p>
-              </div>
+              <div class="bottom"> </div>
+              <p>Universal’s Tom Cruise actioner “American Made,” Fox’s “Kingsman: the Golden Circle” and New Line’s “It” are all battling for the top spot at this weekend’s North American box office. Estimates showed Saturday that all three movies were heading for around $16.5 million for the Friday-Sunday period amid moderate overall business. Sony’s reboot of “Flatliners” showed little life in its launch with $6 million at 2,552 locations, coming in below what were already modest expectations.</p>
             </div></a></li>
-        <li><a href="#" class="row"> 
-            <div style="background-image: url(images/celeb-3.png)" class="col-lg-2 left"></div>
+        <li><a href="http://variety.com/2017/film/news/san-sebastian-james-franco-the-disaster-artist-golden-shell-1202577123/" class="row"> 
+            <div style="background-image: url(images/news/3.png)" class="col-lg-2 left"></div>
             <div class="col-lg-8 right"> 
-              <div class="top"> <span>11 hours ago</span><span>The Hollywood Reporter - TV News</span></div>
+              <div class="top"> <span>17 hours ago</span><span>Variety - Film News - See recent Variety - Film News news</span></div>
               <div class="middle"> 
-                <h3>Emmys: 'Handmaid's Tale' Emerges as Big Winner in Night of New Faces</h3>
+                <h3>James Franco’s ‘The Disaster Artist’ Wins San Sebastian</h3>
               </div>
-              <div class="bottom"> 
-                <p>Game of Thrones may now have a bigger Emmy obstacle than the exhaustive production schedule that kept it from being eligible for the 2017 show. The TV Academy is quite fond of a new drama…</p>
-              </div>
+              <div class="bottom"> </div>
+              <p>San Sebastian — Having placed second in Toronto’s People’s Choice Awards, James Franco scored his first big outright win as a director, his “The Disaster Artist” scooping Saturday night the 65th San Sebastián Festival’s Golden Shell, the top plaudit at the highest-profile film event in the Spanish-speaking world. "This was a family affair, my brother, my sister, my old friend Seth Rogen," Franco said, accepting the award on stage at San Sebastián.</p>
             </div></a></li>
-        <li><a href="#" class="row"> 
-            <div style="background-image: url(images/celeb-4.png)" class="col-lg-2 left"></div>
+        <li><a href="http://www.indiewire.com/2017/09/blade-runner-2049-soundtrack-johann-johannson-1201882380/" class="row"> 
+            <div style="background-image: url(images/news/4.jpg)" class="col-lg-2 left"></div>
             <div class="col-lg-8 right"> 
-              <div class="top"> <span>11 hours ago</span><span>The Hollywood Reporter - TV News</span></div>
+              <div class="top"> <span>18 hours ago</span><span>Indiewire - See recent Indiewire news</span></div>
               <div class="middle"> 
-                <h3>Emmys: 'Handmaid's Tale' Emerges as Big Winner in Night of New Faces</h3>
+                <h3>'Blade Runner 2049' Soundtrack: Denis Villeneuve Finally Reveals Why Jóhann Jóhannsson Left the Project</h3>
               </div>
-              <div class="bottom"> 
-                <p>Game of Thrones may now have a bigger Emmy obstacle than the exhaustive production schedule that kept it from being eligible for the 2017 show. The TV Academy is quite fond of a new drama…</p>
-              </div>
+              <div class="bottom"> </div>
+              <p>Denis Villeneuve and Jóhann Jóhannsson have collaborated three times in the last few years, with the Icelandic composer scoring “Prisoners,” “Sicario,” and “Arrival.” That partnership was meant to continue with “Blade Runner 2049,” but Hans Zimmer and Benjamin Wallfisch eventually took over for Jóhannsson on the long-awaited sequel to Ridley Scott’s sci-fi landmark. After much speculation, Villeneuve has commented on the reason why he chose to go in a different musical direction.</p>
             </div></a></li>
-        <li><a href="#" class="row"> 
-            <div style="background-image: url(images/celeb-5.png)" class="col-lg-2 left"></div>
+        <li><a href="http://www.indiewire.com/2017/09/game-of-thrones-season-8-directors-miguel-sapochnik-1201882345/" class="row"> 
+            <div style="background-image: url(images/news/5.jpg)" class="col-lg-2 left"></div>
             <div class="col-lg-8 right"> 
-              <div class="top"> <span>11 hours ago</span><span>The Hollywood Reporter - TV News</span></div>
+              <div class="top"> <span>21 hours ago</span><span>Indiewire - See recent Indiewire news</span></div>
               <div class="middle"> 
-                <h3>Emmys: 'Handmaid's Tale' Emerges as Big Winner in Night of New Faces</h3>
+                <h3>'Game of Thrones' Season 8 Directors: The Show's Two Emmy Winners Are Returning</h3>
               </div>
-              <div class="bottom"> 
-                <p>Game of Thrones may now have a bigger Emmy obstacle than the exhaustive production schedule that kept it from being eligible for the 2017 show. The TV Academy is quite fond of a new drama…</p>
-              </div>
+              <div class="bottom"> </div>
+              <p>We still don’t know exactly when “Game of Thrones” will return, but we do know which directors are on duty for the show’s final season. Among the helmers coming back to Westeros are Miguel Sapochnik, who won an Emmy for directing the season-six standout “Battle of the Bastards” and was also responsible for the equally great finale, “The Winds of Winter”; he wasn’t involved in the most recent season, as he was off directing “Altered Carbon” for Netflix.</p>
             </div></a></li>
-        <li><a href="#" class="row"> 
-            <div style="background-image: url(images/celeb-1.png)" class="col-lg-2 left"></div>
+        <li><a href="http://www.thewrap.com/hawaii-five-0-diversity-exits-season-8-premiere/" class="row"> 
+            <div style="background-image: url(images/news/6.jpg)" class="col-lg-2 left"></div>
             <div class="col-lg-8 right"> 
-              <div class="top"> <span>11 hours ago</span><span>The Hollywood Reporter - TV News</span></div>
+              <div class="top"> <span>29 September 2017 7:36 PM</span><span>The Wrap - See recent The Wrap news</span></div>
               <div class="middle"> 
-                <h3>Emmys: 'Handmaid's Tale' Emerges as Big Winner in Night of New Faces</h3>
+                <h3>‘Hawaii Five-0’ Boss Is ‘Shocked’ That Cast Exits Led to Criticism of Show’s Diversity</h3>
               </div>
-              <div class="bottom"> 
-                <p>Game of Thrones may now have a bigger Emmy obstacle than the exhaustive production schedule that kept it from being eligible for the 2017 show. The TV Academy is quite fond of a new drama…</p>
-              </div>
+              <div class="bottom"> </div>
+              <p>“Hawaii Five-0” executive producer Peter Lenkov is weighing in on the show’s eighth season and its recent cast shakeup. CBS said in a statement during the summer that Daniel Dae Kim (Chin Ho Kelly) and Grace Park (Kono Kalakaua) were leaving despite being offered “large and significant salary increases.” But Kim appeared to offer a different narrative when he wrote in a goodbye message posted to social media, “The path to equality is rarely easy,” suggesting that he wasn’t offered as much as the show’s white cast members. Lenkov told TheWrap it was “shocking” when the show’s commitment to diversity was.</p>
             </div></a></li>
-        <li><a href="#" class="row"> 
-            <div style="background-image: url(images/celeb-2.png)" class="col-lg-2 left"></div>
+        <li><a href="http://people.com/movies/kristin-davis-sex-and-the-city-3-reaction/" class="row"> 
+            <div style="background-image: url(images/news/7.jpg)" class="col-lg-2 left"></div>
             <div class="col-lg-8 right"> 
-              <div class="top"> <span>11 hours ago</span><span>The Hollywood Reporter - TV News</span></div>
+              <div class="top"> <span>22 hours ago</span><span>PEOPLE.com - See recent PEOPLE.com news</span></div>
               <div class="middle"> 
-                <h3>Emmys: 'Handmaid's Tale' Emerges as Big Winner in Night of New Faces</h3>
+                <h3>Kristin Davis Is Upset Sex and the City 3 Won’t Be Made: 'It Is Deeply Frustrating'</h3>
               </div>
-              <div class="bottom"> 
-                <p>Game of Thrones may now have a bigger Emmy obstacle than the exhaustive production schedule that kept it from being eligible for the 2017 show. The TV Academy is quite fond of a new drama…</p>
+              <div class="bottom"> </div>
+              <p>Add Kristin Davis‘ name to the list of fans upset over the news that there won’t be another Sex and the City movie. The 52-year-old actress, who played Charlotte on the popular HBO series and in its two big-screen film adaptations, penned a heartfelt Instagram post on Friday lamenting about the news that their planned third film has been killed. “It is true that we are not going to be able to make a film,” Davis wrote. “I wish that we could have made the final chapter, on our own terms, to complete the stories of our characters. It </p>
+            </div></a></li>
+        <li><a href="http://variety.com/2017/film/news/nyff-richard-linklater-last-flag-flying-1202576470/" class="row"> 
+            <div style="background-image: url(images/news/8.jpg)" class="col-lg-2 left"></div>
+            <div class="col-lg-8 right"> 
+              <div class="top"> <span>29 September 2017 3:38 PM</span><span>Variety - Film News - See recent Variety - Film News news</span></div>
+              <div class="middle"> 
+                <h3>Richard Linklater Opens NYFF With ‘Last Flag Flying’: ‘It’s Such an Honor’</h3>
               </div>
+              <div class="bottom"> </div>
+              <p>Richard Linklater’s latest film, “Last Flag Flying” nabbed the coveted opening slot at the 55th annual New York Film Festival because it “just felt right.” That’s according to fest director Kent Jones, who was at Lincoln Center’s Alice Tully Hall on Thursday night to introduce the Amazon pic more than once. Audiences had a chance to view the feature thrice before its official VIP 9 p.m. screening, which was followed by a gala at Central Park’s Tavern On The Green that carried on until the wee hours of Friday morning. Bryan Cranston, Laurence Fishburne and Yul Vazquez were among the stars who celebrated the opening night.</p>
+            </div></a></li>
+        <li><a href="http://www.vulture.com/2017/10/30-rock-best-episodes-to-watch-netflix-hulu.html?mid=imdb" class="row"> 
+            <div style="background-image: url(images/news/9.jpg)" class="col-lg-2 left"></div>
+            <div class="col-lg-8 right"> 
+              <div class="top"> <span>29 September 2017 3:38 PM</span><span>Variety - Film News - See recent Variety - Film News news</span></div>
+              <div class="middle"> 
+                <h3>The 12 Most Essential 30 Rock Episodes to Watch on Hulu</h3>
+              </div>
+              <div class="bottom"> </div>
+              <p>Tina Fey’s groundbreaking sitcom is now streaming on Hulu.</p>
+            </div></a></li>
+        <li><a href="http://variety.com/2017/film/news/the-wound-south-africa-foreign-language-oscar-1202577259/" class="row"> 
+            <div style="background-image: url(images/news/10.jpg)" class="col-lg-2 left"></div>
+            <div class="col-lg-8 right"> 
+              <div class="top"> <span>2 hours ago</span><span>Variety - Film News - See recent Variety - Film News news »</span></div>
+              <div class="middle"> 
+                <h3>South Africa Enters ‘The Wound’ in Foreign-Language Oscar Race</h3>
+              </div>
+              <div class="bottom"> </div>
+              <p>“The Wound” (“Inxeba”), the powerful debut of helmer John Trengove, is South Africa’s submission for the foreign-language Oscar race. An unflinching examination of sexuality, masculinity and cultural identity set against the backdrop of the traditional Xhosa initiation ceremony, the movie was selected by the National Film & Video Foundation (Nfvf) last week. The news was reported in South Africa’s City Press on Sunday.</p>
             </div></a></li>
       </ul>
     </div>
@@ -137,4 +169,5 @@
   </div>
 </footer>
 <script src="js/vendor/jquery-3.2.1.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/app.js"></script>

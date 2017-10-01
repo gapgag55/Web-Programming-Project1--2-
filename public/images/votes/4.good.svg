@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Good</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Single-Movie" transform="translate(-1124.000000, -812.000000)">
+            <g id="content" transform="translate(-21.000000, 120.000000)">
+                <g id="voter" transform="translate(841.000000, 692.000000)">
+                    <g id="Good" transform="translate(304.000000, 0.000000)">
+                        <circle id="Oval-3-Copy-3" fill="#F0D737" cx="30" cy="30" r="30"></circle>
+                        <path d="M22.5,27 C24.9852814,27 27,24.9852814 27,22.5 C27,20.0147186 24.9852814,18 22.5,18 C20.0147186,18 18,20.0147186 18,22.5 C18,24.9852814 20.0147186,27 22.5,27 Z" id="Oval-3-Copy-2" fill="#000000"></path>
+                        <path d="M37.5,27 C39.9852814,27 42,24.9852814 42,22.5 C42,20.0147186 39.9852814,18 37.5,18 C35.0147186,18 33,20.0147186 33,22.5 C33,24.9852814 35.0147186,27 37.5,27 Z" id="Oval-3-Copy" fill="#000000"></path>
+                        <path d="M18,43 L20.015815,43.8639207 L20.015815,43.8639207 C27.5146877,47.0777233 36.1169621,46.3801151 43,42 L43,42" id="Path-3-Copy" stroke="#000000" stroke-width="2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

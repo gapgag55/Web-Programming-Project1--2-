@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+    <div id="load" class="is-active">
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>..Loading..
+    </div>
     <header class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light"><a href="index.html" class="navbar-brand">IMDb</a>
         <button type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
@@ -22,8 +29,10 @@
             <li class="nav-item"><a href="celebs.html" class="nav-link">CELEBS</a></li>
             <li class="nav-item"><a href="news.html" class="nav-link">NEWS</a></li>
           </ul><span class="navbar-text">
-            <div class="search"> <i class="fa fa-search"></i>
-              <input type="text" placeholder="LOOKING FOR...">
+            <div class="search"> 
+              <form action="category.html"><i class="fa fa-search"></i>
+                <input type="text" placeholder="LOOKING FOR...">
+              </form>
             </div><a href="login.html" style="background-image: url(images/avatar.jpg);" class="avatar"></a></span>
         </div>
       </nav>
@@ -130,21 +139,16 @@
     <hr><b class="yellow">ANOTHER KINDS OF MOVIES</b>
     <div class="carousel"> 
       <ul> 
-        <li style="background-image: url(images/1.png)"><span>7.6</span><span>536 VOTED</span>
-          <h3>Home Again</h3>
-        </li>
-        <li style="background-image: url(images/2.png)"><span>7.6</span><span>536 VOTED</span>
-          <h3>Home Again</h3>
-        </li>
-        <li style="background-image: url(images/3.png)"><span>7.6</span><span>536 VOTED</span>
-          <h3>Home Again</h3>
-        </li>
-        <li style="background-image: url(images/4.png)"><span>7.6</span><span>536 VOTED</span>
-          <h3>Home Again</h3>
-        </li>
-        <li style="background-image: url(images/5.png)"><span>7.6</span><span>536 VOTED</span>
-          <h3>Home Again</h3>
-        </li>
+        <li style="background-image: url(images/1.png)"><a href="single.html">   <span>7.6</span><span>536 VOTED</span>
+            <h3>Home Again</h3></a></li>
+        <li style="background-image: url(images/2.png)"><a href="single.html">   <span>7.6</span><span>536 VOTED</span>
+            <h3>Home Again</h3></a></li>
+        <li style="background-image: url(images/3.png)"><a href="single.html">   <span>7.6</span><span>536 VOTED</span>
+            <h3>Home Again</h3></a></li>
+        <li style="background-image: url(images/4.png)"><a href="single.html">   <span>7.6</span><span>536 VOTED</span>
+            <h3>Home Again</h3></a></li>
+        <li style="background-image: url(images/5.png)"><a href="single.html">   <span>7.6</span><span>536 VOTED</span>
+            <h3>Home Again</h3></a></li>
       </ul>
     </div>
   </div>
@@ -156,4 +160,5 @@
   </div>
 </footer>
 <script src="js/vendor/jquery-3.2.1.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/app.js"></script>
